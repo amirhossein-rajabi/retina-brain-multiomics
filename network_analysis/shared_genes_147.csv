@@ -1,0 +1,148 @@
+Gene,Layer,Genomic_Disease_Count,Genomic_Diseases,Genomic_Source,Transcriptomic_Disease_Count,Transcriptomic_Diseases,Transcriptomic_Direction
+SEMA3C,Both (Genomic & Transcriptomic),2,"AD, Glaucoma",GWAS,2,"PD, AMD",Concordant (Up)
+APOE,Genomic,4,"AD, PD, AMD, DR",ClinVar/GWAS for AD - GWAS for PD - ClinVar/GWAS for AMD - GWAS for DR,0,,
+HLA-DQB1,Genomic,4,"AD, PD, AMD, DR",GWAS,0,,
+ABCA1,Genomic,3,"AD, AMD, Glaucoma",GWAS,0,,
+DLG2,Genomic,3,"AD, PD, Glaucoma",GWAS,0,,
+ME3,Genomic,3,"AD, AMD, Glaucoma",GWAS,0,,
+TCF7L2,Genomic,3,"AD, DR, Glaucoma",GWAS,0,,
+WNT3,Genomic,3,"AD, PD, Glaucoma",GWAS,0,,
+ABCA7,Genomic,2,"AD, AMD",GWAS,0,,
+ABRAXAS2,Genomic,2,"AD, Glaucoma",GWAS,0,,
+AFF1,Genomic,2,"AD, AMD",GWAS,0,,
+ALDH1A2,Genomic,2,"AD, AMD",GWAS,0,,
+ALDH9A1,Genomic,2,"AD, Glaucoma",GWAS,0,,
+ANAPC1,Genomic,2,"AD, Glaucoma",GWAS,0,,
+ANKH,Genomic,2,"AD, Glaucoma",GWAS,0,,
+APH1B,Genomic,2,"AD, Glaucoma",GWAS,0,,
+APOC1,Genomic,2,"AD, AMD",GWAS,0,,
+APP,Genomic,2,"AD, Glaucoma",ClinVar/GWAS for AD - GWAS for Glaucoma,0,,
+ATOH7,Genomic,2,"AD, Glaucoma",GWAS,0,,
+BARHL2,Genomic,2,"AD, Glaucoma",GWAS,0,,
+BBS9,Genomic,2,"PD, Glaucoma",GWAS,0,,
+BCAS3,Genomic,2,"AD, Glaucoma",GWAS,0,,
+BICC1,Genomic,2,"AD, Glaucoma",GWAS,0,,
+BMP8A,Genomic,2,"AD, DR",GWAS,0,,
+BNC2,Genomic,2,"AD, Glaucoma",GWAS,0,,
+C17orf58,Genomic,2,"AD, Glaucoma",GWAS,0,,
+CADM2,Genomic,2,"AD, Glaucoma",GWAS,0,,
+CARD18,Genomic,2,"AD, DR",GWAS,0,,
+CCDC91,Genomic,2,"AD, Glaucoma",GWAS,0,,
+CDKAL1,Genomic,2,"AD, DR",GWAS,0,,
+CLIC5,Genomic,2,"AD, Glaucoma",GWAS,0,,
+CNN2,Genomic,2,"AD, AMD",GWAS,0,,
+CNTNAP2,Genomic,2,"AD, Glaucoma",GWAS,0,,
+COL11A1,Genomic,2,"AD, Glaucoma",GWAS,0,,
+COL8A2,Genomic,2,"AD, Glaucoma",GWAS,0,,
+CSK,Genomic,2,"AD, AMD",GWAS,0,,
+CYP1A2,Genomic,2,"AD, AMD",GWAS,0,,
+DENND1A,Genomic,2,"AD, Glaucoma",GWAS,0,,
+EXOC3L2,Genomic,2,"AD, AMD",GWAS,0,,
+FERMT2,Genomic,2,"AD, Glaucoma",GWAS,0,,
+FGF19,Genomic,2,"AD, Glaucoma",GWAS,0,,
+FOXP4,Genomic,2,"AD, Glaucoma",GWAS,0,,
+GIPR,Genomic,2,"AD, DR",GWAS,0,,
+GLIS3,Genomic,2,"AD, Glaucoma",GWAS,0,,
+GPM6B,Genomic,2,"PD, Glaucoma",GWAS,0,,
+HMG20A,Genomic,2,"AD, DR",GWAS,0,,
+IL34,Genomic,2,"AD, Glaucoma",GWAS,0,,
+IQGAP1,Genomic,2,"AD, Glaucoma",GWAS,0,,
+ITGB3,Genomic,2,"AD, Glaucoma",GWAS,0,,
+JAZF1,Genomic,2,"AD, DR",GWAS,0,,
+KALRN,Genomic,2,"AD, Glaucoma",GWAS,0,,
+KLHL42,Genomic,2,"AD, DR",GWAS,0,,
+KPNA2,Genomic,2,"AD, Glaucoma",GWAS,0,,
+LPXN,Genomic,2,"AD, Glaucoma",GWAS,0,,
+LTBP1,Genomic,2,"AD, Glaucoma",GWAS,0,,
+MACF1,Genomic,2,"AD, DR",GWAS,0,,
+MADD,Genomic,2,"AD, Glaucoma",GWAS,0,,
+MARK4,Genomic,2,"AD, AMD",GWAS,0,,
+MAU2,Genomic,2,"AD, DR",GWAS,0,,
+MOG,Genomic,2,"AD, AMD",GWAS,0,,
+MTHFD1L,Genomic,2,"AD, Glaucoma",GWAS,0,,
+MVB12B,Genomic,2,"AD, Glaucoma",GWAS,0,,
+MYO16,Genomic,2,"AD, Glaucoma",GWAS,0,,
+MYOCOS,Genomic,2,"AD, Glaucoma",GWAS,0,,
+NCKIPSD,Genomic,2,"AD, Glaucoma",GWAS,0,,
+NFIA,Genomic,2,"AD, Glaucoma",GWAS,0,,
+NPAS2,Genomic,2,"AD, Glaucoma",GWAS,0,,
+NRXN3,Genomic,2,"AD, DR",GWAS,0,,
+OLFM3,Genomic,2,"AD, Glaucoma",GWAS,0,,
+PAM,Genomic,2,"PD, DR",GWAS,0,,
+PDE7B,Genomic,2,"AD, Glaucoma",GWAS,0,,
+PDZD2,Genomic,2,"AD, Glaucoma",GWAS,0,,
+PILRA,Genomic,2,"AD, AMD",GWAS,0,,
+PLEKHA1,Genomic,2,"AD, AMD",GWAS,0,,
+PRSS23,Genomic,2,"AD, Glaucoma",GWAS,0,,
+PSMC3,Genomic,2,"AD, Glaucoma",GWAS,0,,
+RAPSN,Genomic,2,"AD, Glaucoma",GWAS,0,,
+RBFOX1,Genomic,2,"AD, Glaucoma",GWAS,0,,
+RERE,Genomic,2,"AD, Glaucoma",GWAS,0,,
+RMDN2,Genomic,2,"AD, Glaucoma",GWAS for AD - ClinVar for Glaucoma,0,,
+RORA,Genomic,2,"PD, Glaucoma",GWAS,0,,
+RPH3A,Genomic,2,"AD, Glaucoma",GWAS,0,,
+RUNX2,Genomic,2,"AD, Glaucoma",GWAS,0,,
+SLC44A4,Genomic,2,"PD, AMD",GWAS,0,,
+SLC6A15,Genomic,2,"AD, Glaucoma",GWAS,0,,
+SPI1,Genomic,2,"AD, Glaucoma",GWAS,0,,
+ST7L,Genomic,2,"AD, Glaucoma",GWAS,0,,
+TACC2,Genomic,2,"AD, AMD",GWAS,0,,
+TRIM51G,Genomic,2,"AD, Glaucoma",GWAS,0,,
+TTC28,Genomic,2,"AD, Glaucoma",GWAS,0,,
+ULK4,Genomic,2,"AD, Glaucoma",GWAS,0,,
+WBP1L,Genomic,2,"AD, AMD",GWAS,0,,
+ZMAT4,Genomic,2,"AD, Glaucoma",GWAS,0,,
+ZNF366,Genomic,2,"AD, Glaucoma",GWAS,0,,
+ZNF385B,Genomic,2,"AD, AMD",GWAS,0,,
+ZNF652,Genomic,2,"AD, Glaucoma",GWAS,0,,
+LTF,Transcriptomic,0,,,3,"AD, AMD, DR",Concordant (Up)
+TMT1B,Transcriptomic,0,,,3,"AD, AMD, DR",Discordant
+ZBBX,Transcriptomic,0,,,3,"AD, AMD, DR",Concordant (Up)
+SERPINA5,Transcriptomic,0,,,3,"AD, PD, AMD",Concordant (Up)
+C1R,Transcriptomic,0,,,3,"PD, AMD, DR",Concordant (Up)
+COL1A2,Transcriptomic,0,,,3,"PD, AMD, DR",Concordant (Up)
+DCN,Transcriptomic,0,,,3,"PD, DR, Glaucoma",Concordant (Up)
+ANXA1,Transcriptomic,0,,,2,"AD, AMD",Concordant (Up)
+APBB1IP,Transcriptomic,0,,,2,"AD, AMD",Concordant (Up)
+BTK,Transcriptomic,0,,,2,"AD, AMD",Discordant
+ECM2,Transcriptomic,0,,,2,"AD, AMD",Concordant (Up)
+F5,Transcriptomic,0,,,2,"AD, AMD",Concordant (Up)
+NR4A3,Transcriptomic,0,,,2,"AD, AMD",Discordant
+SLC47A2,Transcriptomic,0,,,2,"AD, AMD",Concordant (Up)
+TNFRSF11B,Transcriptomic,0,,,2,"AD, AMD",Concordant (Up)
+AGBL2,Transcriptomic,0,,,2,"AD, DR",Concordant (Up)
+AQP3,Transcriptomic,0,,,2,"AD, DR",Discordant
+CP,Transcriptomic,0,,,2,"AD, DR",Concordant (Up)
+LRAT,Transcriptomic,0,,,2,"AD, DR",Discordant
+MICB,Transcriptomic,0,,,2,"AD, DR",Concordant (Down)
+RASSF9,Transcriptomic,0,,,2,"AD, DR",Concordant (Up)
+ALDH1A3,Transcriptomic,0,,,2,"PD, AMD",Discordant
+C7,Transcriptomic,0,,,2,"PD, AMD",Concordant (Up)
+COL8A1,Transcriptomic,0,,,2,"PD, AMD",Concordant (Up)
+CYP4F12,Transcriptomic,0,,,2,"PD, AMD",Discordant
+FBLN1,Transcriptomic,0,,,2,"PD, AMD",Concordant (Up)
+HSPA6,Transcriptomic,0,,,2,"PD, AMD",Discordant
+IGF2,Transcriptomic,0,,,2,"PD, AMD",Concordant (Up)
+LYVE1,Transcriptomic,0,,,2,"PD, AMD",Concordant (Up)
+OXTR,Transcriptomic,0,,,2,"PD, AMD",Discordant
+SLFN11,Transcriptomic,0,,,2,"PD, AMD",Concordant (Up)
+THBS1,Transcriptomic,0,,,2,"PD, AMD",Concordant (Up)
+BEND4,Transcriptomic,0,,,2,"PD, DR",Concordant (Down)
+CXCR4,Transcriptomic,0,,,2,"PD, DR",Concordant (Up)
+CYP1B1,Transcriptomic,0,,,2,"PD, DR",Discordant
+CYP26B1,Transcriptomic,0,,,2,"PD, DR",Concordant (Up)
+DHCR24,Transcriptomic,0,,,2,"PD, DR",Discordant
+EMILIN2,Transcriptomic,0,,,2,"PD, DR",Concordant (Up)
+FBLN2,Transcriptomic,0,,,2,"PD, DR",Concordant (Up)
+IGFBP2,Transcriptomic,0,,,2,"PD, DR",Concordant (Up)
+LSS,Transcriptomic,0,,,2,"PD, DR",Discordant
+MCTP1,Transcriptomic,0,,,2,"PD, DR",Concordant (Down)
+MMP2,Transcriptomic,0,,,2,"PD, DR",Concordant (Up)
+PHLDB2,Transcriptomic,0,,,2,"PD, DR",Discordant
+THEMIS2,Transcriptomic,0,,,2,"PD, DR",Concordant (Up)
+THSD4,Transcriptomic,0,,,2,"PD, DR",Concordant (Up)
+TMEM97,Transcriptomic,0,,,2,"PD, DR",Discordant
+ZIC1,Transcriptomic,0,,,2,"PD, DR",Concordant (Up)
+ZIC2,Transcriptomic,0,,,2,"PD, DR",Concordant (Up)
+ZNF208,Transcriptomic,0,,,2,"PD, DR",Discordant
+RAB3IP,Transcriptomic,0,,,2,"PD, Glaucoma",Discordant

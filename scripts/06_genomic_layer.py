@@ -1,4 +1,4 @@
-"""Genomic-layer shared genes, permutation test, figures and supplementary tables.
+"""Genomic layer: gene entities, shared genes, permutation test and summary tables.
 
 Shared genes are present in >=2 diseases including at least one neurodegenerative
 (AD, PD) and one ophthalmic (AMD, DR, glaucoma) disease. The script
@@ -8,13 +8,13 @@ Shared genes are present in >=2 diseases including at least one neurodegenerativ
 * identifies shared gene entities / protein-coding genes (Tables 2-3),
 * runs a 10,000-iteration size-matched permutation test against the HGNC
   protein-coding universe,
-* draws the genomic and transcriptomic Venn diagrams, and
-* writes the supplementary workbook (Tables S1-S5).
+* draws Venn diagrams of the genomic and transcriptomic overlaps, and
+* writes an Excel workbook with the per-disease and shared gene lists.
 
 Requires the outputs of scripts 02-04 in results/.
 
 Usage (from the repository root):
-    python scripts/06_genomics_and_supp.py
+    python scripts/06_genomic_layer.py
 """
 import json
 from pathlib import Path
@@ -126,10 +126,11 @@ for _ in range(N):
     q = B[:, ni].any(1) & B[:, oi].any(1)
     for k in obs:
         sim[k].append(int(((n_ >= k) & q).sum()))
-perm = {k: (float(np.mean(sim[k])), (int(np.sum(np.array(sim[k]) >= obs[k])) + 1) / (N + 1)) for k in obs}
+perm = {k: dict(observed=obs[k], expected_mean=round(float(np.mean(sim[k])), 2), permutation_max=int(np.max(sim[k])),
+                P=(int(np.sum(np.array(sim[k]) >= obs[k])) + 1) / (N + 1)) for k in obs}
 
 
-# ---- manuscript tables (Markdown) ----
+# ---- summary tables (Markdown) ----
 def md_shared(M, gtitle):
     r = M[M.qual & (M.n >= 3)].sort_values(["n", "Diseases"], ascending=[False, True])
     return (f"| {gtitle} | Number of diseases | Diseases |\n|---|---|---|\n"
@@ -138,8 +139,8 @@ def md_shared(M, gtitle):
 
 t_all, t_cod = md_shared(MA, "Gene entity"), md_shared(MC, "Gene")
 
-sup = pd.read_excel(RES / "Shared_genes_neuro_ophthalmic_2plus.xlsx", sheet_name="Shared_genes")
-t3 = sup[sup.n_diseases >= 3].copy()
+tx_shared_in = pd.read_excel(RES / "Shared_genes_neuro_ophthalmic_2plus.xlsx", sheet_name="Shared_genes")
+t3 = tx_shared_in[tx_shared_in.n_diseases >= 3].copy()
 t3["diseases"] = t3.diseases.str.replace("+", ", ").str.replace("GL", "Glaucoma")
 t_tx = ("| Gene | Number of diseases | Diseases | Direction of change |\n|---|---|---|---|\n"
         + "\n".join(f"| {r.gene} | {r.n_diseases} | {r.diseases} | "
@@ -152,14 +153,14 @@ t1 = ("| Disease | GWAS Catalog | ClinVar | Both sources | Total gene entities |
       + "\n".join("| " + " | ".join(f"{x:,}" if isinstance(x, int) else str(x) for x in r) + " |" for r in count_rows))
 
 
-# ---- supplementary workbook ----
+# ---- Excel workbook ----
 def entity_type(g):
     if g in official:
         return "Protein-coding gene"
     return "Intergenic region" if " x " in g else "Non-coding / other"
 
 
-S3 = pd.DataFrame(
+entities_df = pd.DataFrame(
     [(d, g, entity_type(g),
       "GWAS Catalog + ClinVar" if g in G[d] and g in C[d] else "GWAS Catalog" if g in G[d] else "ClinVar")
      for d in D for g in sorted(S[d])],
@@ -172,13 +173,13 @@ def shared_table(M):
     return r.reset_index(names="Gene entity")
 
 
-S4a, S4b = shared_table(MA), shared_table(MC)
+shared_all_df, shared_coding_df = shared_table(MA), shared_table(MC)
 
-S2 = sup[["gene", "n_diseases", "diseases", "direction"]
+tx_shared_df = tx_shared_in[["gene", "n_diseases", "diseases", "direction"]
          + [f"{d}_{m}" for d in TX_KEYS for m in ("log2FC", "pvalue")]].copy()
-S2["diseases"] = S2.diseases.str.replace("+", ", ").str.replace("GL", "Glaucoma")
-S2.columns = [c.replace("GL_", "Glaucoma_").replace("_pvalue", " P").replace("_log2FC", " log2FC") for c in S2.columns]
-S2 = S2.rename(columns={"gene": "Gene", "n_diseases": "Number of diseases", "diseases": "Diseases",
+tx_shared_df["diseases"] = tx_shared_df.diseases.str.replace("+", ", ").str.replace("GL", "Glaucoma")
+tx_shared_df.columns = [c.replace("GL_", "Glaucoma_").replace("_pvalue", " P").replace("_log2FC", " log2FC") for c in tx_shared_df.columns]
+tx_shared_df = tx_shared_df.rename(columns={"gene": "Gene", "n_diseases": "Number of diseases", "diseases": "Diseases",
                         "direction": "Direction"})
 
 TERMS = {
@@ -195,25 +196,22 @@ TERMS = {
     "Glaucoma": ("glaucoma; primary open-angle glaucoma; normal-tension glaucoma",
                  "glaucoma; primary open-angle glaucoma; normal-tension glaucoma"),
 }
-S5 = pd.DataFrame([(d, *TERMS[d]) for d in D], columns=["Disease", "GWAS Catalog trait terms", "ClinVar condition terms"])
+search_terms_df = pd.DataFrame([(d, *TERMS[d]) for d in D], columns=["Disease", "GWAS Catalog trait terms", "ClinVar condition terms"])
 
-S1 = pd.read_csv(RES / "TableS1_samples.csv").drop(columns=["included", "reason"])
-S1["Disease"] = S1.Disease.replace({"Alzheimer's disease": "AD", "Parkinson's disease": "PD",
+samples_df = pd.read_csv(RES / "TableS1_samples.csv").drop(columns=["included", "reason"])
+samples_df["Disease"] = samples_df.Disease.replace({"Alzheimer's disease": "AD", "Parkinson's disease": "PD",
                                     "Diabetic retinopathy": "DR"})
 
-index = pd.DataFrame({
-    "Table": ["S1", "S2", "S3", "S4", "S5"],
-    "Content": [
-        "Transcriptomic samples included in the analysis",
-        "Genes shared by at least two diseases in the transcriptomic layer (one neurodegenerative, one ophthalmic)",
-        "Genomic-layer gene entities per disease with entity type and source",
-        "Genomic-layer gene entities shared by at least two diseases (one neurodegenerative, one ophthalmic); "
-        "sheet 'S4a' all entities, 'S4b' protein-coding genes",
-        "Search terms used for the GWAS Catalog and ClinVar",
-    ]})
-with pd.ExcelWriter(OUT / "Supplementary_Tables.xlsx") as w:
-    index.to_excel(w, sheet_name="Index", index=False)
-    for name, df in [("S1", S1), ("S2", S2), ("S3", S3), ("S4a", S4a), ("S4b", S4b), ("S5", S5)]:
+sheets = {
+    "samples": samples_df,                    # transcriptomic samples included
+    "transcriptomic_shared": tx_shared_df,    # shared DEGs, direction and per-disease statistics
+    "genomic_entities": entities_df,          # genomic entities per disease, entity type and source
+    "genomic_shared_all": shared_all_df,      # shared genomic entities
+    "genomic_shared_coding": shared_coding_df,  # shared protein-coding genes
+    "search_terms": search_terms_df,          # GWAS Catalog / ClinVar search terms
+}
+with pd.ExcelWriter(OUT / "genomic_and_shared_gene_tables.xlsx") as w:
+    for name, df in sheets.items():
         df.to_excel(w, sheet_name=name, index=False)
 
 
@@ -226,10 +224,10 @@ summary = dict(
     shared_all_entities=int(MA.qual.sum()), shared_coding=int(MC.qual.sum()),
     shared_by_n_all={k: n_exact(MA, k) for k in (2, 3, 4, 5)},
     shared_by_n_coding={k: n_exact(MC, k) for k in (2, 3, 4, 5)},
-    permutation_expected_and_P=perm, observed=obs, transcriptomic_DEGs_total_up_down=tx,
+    permutation=perm, observed=obs, transcriptomic_DEGs_total_up_down=tx,
     union_all_entities=len(MA), union_coding=len(MC),
 )
 (OUT / "summary_numbers.json").write_text(json.dumps(summary, indent=2, default=str))
-(OUT / "manuscript_tables.md").write_text("\n\n".join([t1, t_all, t_cod, t_tx]) + "\n")
+(OUT / "summary_tables.md").write_text("\n\n".join([t1, t_all, t_cod, t_tx]) + "\n")
 print(json.dumps(summary, indent=2, default=str))
 print(t1, t_all, t_cod, t_tx, sep="\n\n")

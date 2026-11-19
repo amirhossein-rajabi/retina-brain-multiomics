@@ -1,0 +1,260 @@
+Id1,Id2,Name1,Name2
+C01724,4047,"4,4',14alpha-Trimethyl-5alpha-cholesta-8,24-dien-3beta-ol",LSS
+C01724,1718,"4,4',14alpha-Trimethyl-5alpha-cholesta-8,24-dien-3beta-ol",DHCR24
+C01054,4047,"(3S)-2,3-Epoxy-2,3-dihydrosqualene",LSS
+C15493,8854,9-cis-Retinoic acid,ALDH1A2
+C15493,220,9-cis-Retinoic acid,ALDH1A3
+C00376,8854,all-trans-Retinene,ALDH1A2
+C00376,220,all-trans-Retinene,ALDH1A3
+C16681,8854,9-cis-Retinal,ALDH1A2
+C16681,220,9-cis-Retinal,ALDH1A3
+C00777,8854,all-trans-Vitamin A1 acid,ALDH1A2
+C00777,220,all-trans-Vitamin A1 acid,ALDH1A3
+C00777,1544,all-trans-Vitamin A1 acid,CYP1A2
+C00777,1545,all-trans-Vitamin A1 acid,CYP1B1
+C16756,1544,Aflatoxin M1,CYP1A2
+C16756,1545,Aflatoxin M1,CYP1B1
+C05966,1544,"(5Z,8Z,11Z,13E)-(15S)-15-Hydroperoxyicosa-5,8,11,13-tetraenoate",CYP1A2
+C05966,1545,"(5Z,8Z,11Z,13E)-(15S)-15-Hydroperoxyicosa-5,8,11,13-tetraenoate",CYP1B1
+C00468,1544,"3-Hydroxy-1,3,5(10)-estratrien-17-one",CYP1A2
+C00468,1545,"3-Hydroxy-1,3,5(10)-estratrien-17-one",CYP1B1
+C05298,1544,2-Hydroxyestrone,CYP1A2
+C05298,1545,2-Hydroxyestrone,CYP1B1
+C00162,1544,Fatty acid,CYP1A2
+C00162,1545,Fatty acid,CYP1B1
+C14770,1544,"(5Z,8Z,14Z)-11,12-Epoxyicosa-5,8,14-trienoic acid",CYP1A2
+C14770,1545,"(5Z,8Z,14Z)-11,12-Epoxyicosa-5,8,14-trienoic acid",CYP1B1
+C00219,1544,"(5Z,8Z,11Z,14Z)-Icosa-5,8,11,14-tetraenoic acid",CYP1A2
+C00219,1545,"(5Z,8Z,11Z,14Z)-Icosa-5,8,11,14-tetraenoic acid",CYP1B1
+C05291,1544,7alpha-Hydroxytestosterone,CYP1A2
+C05291,1545,7alpha-Hydroxytestosterone,CYP1B1
+C19604,1544,"DMBA-5,6-epoxide",CYP1A2
+C19604,1545,"DMBA-5,6-epoxide",CYP1B1
+C01595,1544,"9-cis,12-cis-Octadecadienoic acid",CYP1A2
+C01595,1545,"9-cis,12-cis-Octadecadienoic acid",CYP1B1
+C06604,1544,DNTP,CYP1A2
+C06604,1545,DNTP,CYP1B1
+C19577,1544,"1-(Methylnitrosoamino)-4-(3-pyridinyl)-1,4-butanediol",CYP1A2
+C19577,1545,"1-(Methylnitrosoamino)-4-(3-pyridinyl)-1,4-butanediol",CYP1B1
+C19559,1544,"(1aalpha,2beta,3alpha,11calpha)-1a,2,3,11c-Tetrahydro-6,11-dimethylbenzo[6,7]phenanthro[3,4-b]oxirene-2,3-diol",CYP1A2
+C19559,1545,"(1aalpha,2beta,3alpha,11calpha)-1a,2,3,11c-Tetrahydro-6,11-dimethylbenzo[6,7]phenanthro[3,4-b]oxirene-2,3-diol",CYP1B1
+C16358,1544,1-Methylxanthine,CYP1A2
+C16358,1545,1-Methylxanthine,CYP1B1
+C07535,1544,Benzpyrene,CYP1A2
+C07535,1545,Benzpyrene,CYP1B1
+C07572,1544,Citalopram,CYP1A2
+C07572,1545,Citalopram,CYP1B1
+C14849,1544,"Benzo[a]pyrene-9,10-epoxide",CYP1A2
+C14849,1545,"Benzo[a]pyrene-9,10-epoxide",CYP1B1
+C00829,1544,Naphthalene,CYP1A2
+C00829,1545,Naphthalene,CYP1B1
+C11148,1544,Trichloroepoxyethane,CYP1A2
+C11148,1545,Trichloroepoxyethane,CYP1B1
+C19563,1544,4-[(Hydroxymethyl)nitrosoamino]-1-(3-pyridinyl)-1-butanone,CYP1A2
+C19563,1545,4-[(Hydroxymethyl)nitrosoamino]-1-(3-pyridinyl)-1-butanone,CYP1B1
+C06790,1544,TCE,CYP1A2
+C06790,1545,TCE,CYP1B1
+C06174,1544,"(5alpha,6alpha)-7,8-Didehydro-4,5-epoxy-3-methoxy-17-methylmorphinan-6-ol",CYP1A2
+C06174,1545,"(5alpha,6alpha)-7,8-Didehydro-4,5-epoxy-3-methoxy-17-methylmorphinan-6-ol",CYP1B1
+C01598,1544,N-Acetyl-5-methoxytryptamine,CYP1A2
+C01598,1545,N-Acetyl-5-methoxytryptamine,CYP1B1
+C07496,1544,Carbamazepine epoxide,CYP1A2
+C07496,1545,Carbamazepine epoxide,CYP1B1
+C06868,1544,Carbamazepine,CYP1A2
+C06868,1545,Carbamazepine,CYP1B1
+C14782,1544,"(5Z,8Z,13E)-(15S)-11,12,15-Trihydroxyicosa-5,8,12-trienoic acid",CYP1A2
+C14782,1545,"(5Z,8Z,13E)-(15S)-11,12,15-Trihydroxyicosa-5,8,12-trienoic acid",CYP1B1
+C14786,1544,"(1R,2S)-Naphthalene epoxide",CYP1A2
+C14786,1545,"(1R,2S)-Naphthalene epoxide",CYP1B1
+C16607,1544,Citalopram N-oxide,CYP1A2
+C16607,1545,Citalopram N-oxide,CYP1B1
+C19580,1544,alpha-[3-[(Hydroxymethyl)nitrosoamino]propyl]-3-pyridinemethanol,CYP1A2
+C19580,1545,alpha-[3-[(Hydroxymethyl)nitrosoamino]propyl]-3-pyridinemethanol,CYP1B1
+C16555,1544,2-Dechloroethylifosfamide,CYP1A2
+C16555,1545,2-Dechloroethylifosfamide,CYP1B1
+C19586,1544,"2,3-Epoxyaflatoxin B1",CYP1A2
+C19586,1545,"2,3-Epoxyaflatoxin B1",CYP1B1
+C14851,1544,"Benzo[a]pyrene-4,5-epoxide",CYP1A2
+C14851,1545,"Benzo[a]pyrene-4,5-epoxide",CYP1B1
+C01516,1544,Morphine,CYP1A2
+C01516,1545,Morphine,CYP1B1
+C14814,1544,"(5Z,8Z,12E)-11,14,15-Trihydroxyicosa-5,8,12-trienoic acid",CYP1A2
+C14814,1545,"(5Z,8Z,12E)-11,14,15-Trihydroxyicosa-5,8,12-trienoic acid",CYP1B1
+C19490,1544,"trans-DMBA-3,4-dihydrodiol",CYP1A2
+C19490,1545,"trans-DMBA-3,4-dihydrodiol",CYP1B1
+C00951,1544,beta-Estradiol,CYP1A2
+C00951,1545,beta-Estradiol,CYP1B1
+C16453,1544,NNK,CYP1A2
+C16453,1545,NNK,CYP1B1
+C14866,1544,Trichloroacetaldehyde,CYP1A2
+C14866,1545,Trichloroacetaldehyde,CYP1B1
+C05011,1544,4-Hydroxytamoxifen,CYP1A2
+C05011,1545,4-Hydroxytamoxifen,CYP1B1
+C16550,1544,3-Dechloroethylifosfamide,CYP1A2
+C16550,1545,3-Dechloroethylifosfamide,CYP1B1
+C11785,1544,Normorphine,CYP1A2
+C11785,1545,Normorphine,CYP1B1
+C19594,1544,"Aflatoxin-M1-8,9-epoxide",CYP1A2
+C19594,1545,"Aflatoxin-M1-8,9-epoxide",CYP1B1
+C14778,1544,"(5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyicosa-5,8,11,14-tetraenoic acid",CYP1A2
+C14778,1545,"(5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyicosa-5,8,11,14-tetraenoic acid",CYP1B1
+C16608,1544,Demethylcitalopram,CYP1A2
+C16608,1545,Demethylcitalopram,CYP1B1
+C14787,1544,"(1S,2R)-Naphthalene epoxide",CYP1A2
+C14787,1545,"(1S,2R)-Naphthalene epoxide",CYP1B1
+C14826,1544,"(12R,13S)-(9Z)-12,13-Epoxyoctadecenoic acid",CYP1A2
+C14826,1545,"(12R,13S)-(9Z)-12,13-Epoxyoctadecenoic acid",CYP1B1
+C07073,1544,Lidocaine,CYP1A2
+C07073,1545,Lidocaine,CYP1B1
+C14813,1544,"(5Z,8Z,12E)-14,15-Epoxy-11-hydroxyicosa-5,8,12-trienoic acid",CYP1A2
+C14813,1545,"(5Z,8Z,12E)-14,15-Epoxy-11-hydroxyicosa-5,8,12-trienoic acid",CYP1B1
+C16679,1544,all-trans-18-Hydroxyretinoic acid,CYP1A2
+C16679,1545,all-trans-18-Hydroxyretinoic acid,CYP1B1
+C14769,1544,"(5Z,11Z,14Z)-8,9-Epoxyicosa-5,11,14-trienoic acid",CYP1A2
+C14769,1545,"(5Z,11Z,14Z)-8,9-Epoxyicosa-5,11,14-trienoic acid",CYP1B1
+C14749,1544,(19S)-Hydroxy arachidonic acid,CYP1A2
+C14749,1545,(19S)-Hydroxy arachidonic acid,CYP1B1
+C00087,1544,Elemental sulfur,CYP1A2
+C00087,1545,Elemental sulfur,CYP1B1
+C13747,1544,Paraxanthine,CYP1A2
+C13747,1545,Paraxanthine,CYP1B1
+C16546,1544,N-Desmethyltamoxifen,CYP1A2
+C16546,1545,N-Desmethyltamoxifen,CYP1B1
+C16680,1544,"all-trans-5,6-Epoxy-5,6-dihydroretinoic acid",CYP1A2
+C16680,1545,"all-trans-5,6-Epoxy-5,6-dihydroretinoic acid",CYP1B1
+C14768,1544,"(8Z,11Z,14Z)-5,6-Epoxyicosa-8,11,14-trienoic acid",CYP1A2
+C14768,1545,"(8Z,11Z,14Z)-5,6-Epoxyicosa-8,11,14-trienoic acid",CYP1B1
+C14800,1544,"1-Nitronaphthalene-5,6-oxide",CYP1A2
+C14800,1545,"1-Nitronaphthalene-5,6-oxide",CYP1B1
+C14771,1544,"(5Z,8Z,11Z)-14,15-Epoxyicosa-5.8.11-trienoic acid",CYP1A2
+C14771,1545,"(5Z,8Z,11Z)-14,15-Epoxyicosa-5.8.11-trienoic acid",CYP1B1
+C00067,1544,Formalin,CYP1A2
+C00067,1545,Formalin,CYP1B1
+C05643,1544,6-Hydroxymelatonin,CYP1A2
+C05643,1545,6-Hydroxymelatonin,CYP1B1
+C16677,1544,all-trans-4-Hydroxyretinoic acid,CYP1A2
+C16677,1545,all-trans-4-Hydroxyretinoic acid,CYP1B1
+C01371,1544,RH,CYP1A2
+C01371,1545,RH,CYP1B1
+C16609,1544,Didemethylcitalopram,CYP1A2
+C16609,1545,Didemethylcitalopram,CYP1B1
+C14852,1544,"Benzo[a]pyrene-7,8-dihydrodiol",CYP1A2
+C14852,1545,"Benzo[a]pyrene-7,8-dihydrodiol",CYP1B1
+C06754,1544,2-Chloroethanal,CYP1A2
+C06754,1545,2-Chloroethanal,CYP1B1
+C16356,1544,"1,7-Dimethyluric acid",CYP1A2
+C16356,1545,"1,7-Dimethyluric acid",CYP1B1
+C14040,1544,1-Nitronaphthalene,CYP1A2
+C14040,1545,1-Nitronaphthalene,CYP1B1
+C06606,1544,"O,O-Diethyl-O-p-nitrophenylphosphoric acid",CYP1A2
+C06606,1545,"O,O-Diethyl-O-p-nitrophenylphosphoric acid",CYP1B1
+C14802,1544,"1-Nitronaphthalene-7,8-oxide",CYP1A2
+C14802,1545,"1-Nitronaphthalene-7,8-oxide",CYP1B1
+C14853,1544,"7,8-Dihydro-7,8-dihydroxybenzo[a]pyrene 9,10-oxide",CYP1A2
+C14853,1545,"7,8-Dihydro-7,8-dihydroxybenzo[a]pyrene 9,10-oxide",CYP1B1
+C14781,1544,"(5Z,8Z,13E)-(15S)-11,12-Epoxy-15-hydroxyicosa-5,8,13-trienoic acid",CYP1A2
+C14781,1545,"(5Z,8Z,13E)-(15S)-11,12-Epoxy-15-hydroxyicosa-5,8,13-trienoic acid",CYP1B1
+C14825,1544,"(9R,10S)-(12Z)-9,10-Epoxyoctadecenoic acid",CYP1A2
+C14825,1545,"(9R,10S)-(12Z)-9,10-Epoxyoctadecenoic acid",CYP1B1
+C05102,1544,2-Hydroxy fatty acid,CYP1A2
+C05102,1545,2-Hydroxy fatty acid,CYP1B1
+C07108,1544,Tamoxifen,CYP1A2
+C07108,1545,Tamoxifen,CYP1B1
+C19574,1544,NNAL,CYP1A2
+C19574,1545,NNAL,CYP1B1
+C14854,1544,"9-Hydroxybenzo[a]pyrene-4,5-epoxide",CYP1A2
+C14854,1545,"9-Hydroxybenzo[a]pyrene-4,5-epoxide",CYP1B1
+C05301,1544,2-OH-Estradiol,CYP1A2
+C05301,1545,2-OH-Estradiol,CYP1B1
+C16561,1544,Monoethylglycinexylidide,CYP1A2
+C16561,1545,Monoethylglycinexylidide,CYP1B1
+C05139,1544,"5-Androstene-3beta,16alpha-diol-17-one",CYP1A2
+C05139,1545,"5-Androstene-3beta,16alpha-diol-17-one",CYP1B1
+C05141,1544,"1,3,5(10)-Estratriene-3,16-alpha,17beta-triol",CYP1A2
+C05141,1545,"1,3,5(10)-Estratriene-3,16-alpha,17beta-triol",CYP1B1
+C00280,1544,"4-Androstene-3,17-dione",CYP1A2
+C00280,1545,"4-Androstene-3,17-dione",CYP1B1
+C01227,1544,DHEA,CYP1A2
+C01227,1545,DHEA,CYP1B1
+C16560,1544,3-Hydroxylidocaine,CYP1A2
+C16560,1545,3-Hydroxylidocaine,CYP1B1
+C19585,1544,Aflatoxin Q1,CYP1A2
+C19585,1545,Aflatoxin Q1,CYP1B1
+C05296,1544,7alpha-Hydroxyandrostenedione,CYP1A2
+C05296,1545,7alpha-Hydroxyandrostenedione,CYP1B1
+C06800,1544,Aflatoxin B1,CYP1A2
+C06800,1545,Aflatoxin B1,CYP1B1
+C19566,1544,4-Hydroxy-4-(methylnitrosoamino)-1-(3-pyridinyl)-1-butanone,CYP1A2
+C19566,1545,4-Hydroxy-4-(methylnitrosoamino)-1-(3-pyridinyl)-1-butanone,CYP1B1
+C07047,1544,Isophosphamide,CYP1A2
+C07047,1545,Isophosphamide,CYP1B1
+C14556,1544,9-Hydroxybenzo[a]pyrene,CYP1A2
+C14556,1545,9-Hydroxybenzo[a]pyrene,CYP1B1
+C14850,1544,"Benzo[a]pyrene-7,8-epoxide",CYP1A2
+C14850,1545,"Benzo[a]pyrene-7,8-epoxide",CYP1B1
+C00535,1544,17beta-Hydroxy-4-androsten-3-one,CYP1A2
+C00535,1545,17beta-Hydroxy-4-androsten-3-one,CYP1B1
+C19595,1544,"Aflatoxin B1-endo-8,9-epoxide",CYP1A2
+C19595,1545,"Aflatoxin B1-endo-8,9-epoxide",CYP1B1
+C19489,1544,"1a,11b-Dihydro-4,9-dimethylbenz[a]anthra[3,4-b]oxirene",CYP1A2
+C19489,1545,"1a,11b-Dihydro-4,9-dimethylbenz[a]anthra[3,4-b]oxirene",CYP1B1
+C19488,1544,DMBA,CYP1A2
+C19488,1545,DMBA,CYP1B1
+C16547,1544,4-Hydroxy-N-desmethyltamoxifen,CYP1A2
+C16547,1545,4-Hydroxy-N-desmethyltamoxifen,CYP1B1
+C05300,1544,16alpha-Hydroxyestrone,CYP1A2
+C05300,1545,16alpha-Hydroxyestrone,CYP1B1
+C07481,1544,"1,3,7-Trimethylxanthine",CYP1A2
+C07481,1545,"1,3,7-Trimethylxanthine",CYP1B1
+C00017,57787,Protein,MARK4
+C00017,8997,Protein,KALRN
+C05437,1718,"5alpha-Cholesta-8,24-dien-3beta-ol",DHCR24
+C15915,1718,"4,4-Dimethyl-5alpha-cholesta-8-en-3beta-ol",DHCR24
+C05109,1718,"24,25-Dihydrolanosterol",DHCR24
+C01164,1718,"Cholesta-5,7-dien-3beta-ol",DHCR24
+C05439,1718,"5alpha-Cholesta-7,24-dien-3beta-ol",DHCR24
+C03845,1718,Cholestenol,DHCR24
+C01802,1718,"Cholesta-5,24-dien-3beta-ol",DHCR24
+C05108,1718,"4,4-Dimethyl-8,24-cholestadienol",DHCR24
+C05107,1718,"Cholesta-5,7,24-triene-3beta-ol",DHCR24
+C00187,1718,Cholest-5-en-3beta-ol,DHCR24
+C01189,1718,5alpha-Cholest-7-en-3beta-ol,DHCR24
+C14819,1356,Iron(3+),CP
+C14818,1356,Iron(2+),CP
+C00072,5066,Vitamin C,PAM
+C01041,5066,Semidehydroascorbic acid,PAM
+C03303,5066,Peptidyl(2-hydroxyglycine),PAM
+C00048,5066,Glyoxylic acid,PAM
+C02179,5066,Peptidyl amide,PAM
+C00007,1544,Oxygen,CYP1A2
+C00007,1545,Oxygen,CYP1B1
+C00007,1356,Oxygen,CP
+C00001,8854,H2O,ALDH1A2
+C00001,220,H2O,ALDH1A3
+C00001,1544,H2O,CYP1A2
+C00001,1545,H2O,CYP1B1
+C00001,1356,H2O,CP
+C00080,8854,H+,ALDH1A2
+C00080,220,H+,ALDH1A3
+C00080,1544,H+,CYP1A2
+C00080,1545,H+,CYP1B1
+C00080,1718,H+,DHCR24
+C00080,1356,H+,CP
+C00002,1445,ATP,CSK
+C00002,695,ATP,BTK
+C00008,1445,ADP,CSK
+C00008,695,ADP,BTK
+C00005,1544,NADPH,CYP1A2
+C00005,1545,NADPH,CYP1B1
+C00005,1718,NADPH,DHCR24
+C00006,1544,NADP+,CYP1A2
+C00006,1545,NADP+,CYP1B1
+C00006,1718,NADP+,DHCR24
+C00003,8854,NAD+,ALDH1A2
+C00003,220,NAD+,ALDH1A3
+C00003,1544,NAD+,CYP1A2
+C00003,1545,NAD+,CYP1B1
+C00004,8854,NADH,ALDH1A2
+C00004,220,NADH,ALDH1A3
+C00004,1544,NADH,CYP1A2
+C00004,1545,NADH,CYP1B1

@@ -1,11 +1,11 @@
 # Sample selection, dataset characteristics (Table 4) and differential expression
 # analysis for the five GEO datasets (limma for microarrays, DESeq2 for RNA-seq).
-# Requires data/ prepared as described in data/README.md and 01_metadata_explore.R.
+# Requires data/ prepared as described in data/README.md and 01_download_geo.R.
 # Usage (from the repository root): Rscript scripts/02_DEG.R
 suppressMessages({library(GEOquery); library(limma); library(DESeq2); library(AnnotationDbi)
   library(org.Hs.eg.db); library(hgu133plus2.db); library(huex10sttranscriptcluster.db); library(writexl)})
 dir.create("results/DEG", recursive = TRUE, showWarnings = FALSE)
-LFC <- as.numeric(Sys.getenv("LFC", "0.5")); FDR <- 0.05
+LFC <- as.numeric(Sys.getenv("LFC", "0.5")); ALPHA <- 0.05
 meta_all <- list(); table1 <- list()
 
 ens2sym <- function(ens) { ens <- sub("\\..*", "", ens)
@@ -47,9 +47,10 @@ add_table1 <- function(disease, gse, platform, tissue, comp, m, excl) {
 }
 save_deg <- function(res, name) {
   write.csv(res, sprintf("results/DEG/%s_all_genes.csv", name), row.names = FALSE)
-  sig <- res[res$padj < FDR & abs(res$log2FC) > LFC, ]
-  cat(sprintf("%-10s genes tested=%5d  DEG=%4d (up %d / down %d)\n", name, nrow(res), nrow(sig),
-              sum(sig$log2FC > 0), sum(sig$log2FC < 0)))
+  nom <- res[res$pvalue < ALPHA & abs(res$log2FC) > LFC, ]   # nominal P (primary analysis)
+  fdr <- res[res$padj < ALPHA & abs(res$log2FC) > LFC, ]     # BH-FDR (sensitivity analysis)
+  cat(sprintf("%-10s genes tested=%5d | nominal P: DEG=%4d (up %d / down %d) | FDR: DEG=%4d\n",
+              name, nrow(res), nrow(nom), sum(nom$log2FC > 0), sum(nom$log2FC < 0), nrow(fdr)))
   res
 }
 deg <- list()

@@ -4,10 +4,13 @@ Harmonises gene symbols to current HGNC nomenclature, counts gene entities per
 disease, tabulates genes shared by >=2 diseases (all entities and protein-coding
 genes), draws Venn diagrams and runs a size-matched permutation test of the
 number of genes shared by >=k diseases (no neuro/ophthalmic criterion; the
-criterion-based analysis used in the manuscript is in 06_genomics_and_supp.py).
+criterion-based analysis used in the study is in scripts/06_genomic_layer.py).
+
+Intergenic entries ("GENE1 x GENE2") are split into their flanking genes here,
+so entity counts differ from those reported in the study.
 
 Usage (from the repository root):
-    python scripts/05_genomics_overlap.py
+    python scripts/exploratory/genomic_overlap_all_diseases.py
 """
 import itertools
 import re
@@ -21,7 +24,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 from venn import venn  # noqa: E402
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 GEN = ROOT / "data" / "genomics"
 HGNC = ROOT / "data" / "reference" / "hgnc_protein_coding.txt"
 OUT = ROOT / "results" / "genomics" / "exploratory"

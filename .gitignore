@@ -1,6 +1,10 @@
-# Data and generated outputs
+# Downloaded data and generated outputs
 data/**
 !data/README.md
+!data/genomics/
+!data/genomics/**
+!data/reference/
+!data/reference/**
 results/**
 !results/.gitkeep
 

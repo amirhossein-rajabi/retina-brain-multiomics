@@ -1,0 +1,260 @@
+﻿KEGG_ID,Metabolite,Entrez_ID,Gene_symbol,Gene_module,Filter_result,Retained,Metabolite_class
+C00187,Cholest-5-en-3beta-ol,1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C01164,"Cholesta-5,7-dien-3beta-ol",1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C01189,5alpha-Cholest-7-en-3beta-ol,1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C01724,"4,4',14alpha-Trimethyl-5alpha-cholesta-8,24-dien-3beta-ol",1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C01802,"Cholesta-5,24-dien-3beta-ol",1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C03845,Cholestenol,1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C05107,"Cholesta-5,7,24-triene-3beta-ol",1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C05108,"4,4-Dimethyl-8,24-cholestadienol",1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C05109,"24,25-Dihydrolanosterol",1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C05437,"5alpha-Cholesta-8,24-dien-3beta-ol",1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C05439,"5alpha-Cholesta-7,24-dien-3beta-ol",1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C15915,"4,4-Dimethyl-5alpha-cholesta-8-en-3beta-ol",1718,DHCR24,M1,Retained,Yes,Sterol / cholesterol synthesis
+C01054,"(3S)-2,3-Epoxy-2,3-dihydrosqualene",4047,LSS,M1,Retained,Yes,Sterol / cholesterol synthesis
+C01724,"4,4',14alpha-Trimethyl-5alpha-cholesta-8,24-dien-3beta-ol",4047,LSS,M1,Retained,Yes,Sterol / cholesterol synthesis
+C00048,Glyoxylic acid,5066,PAM,M13,Retained,Yes,Ascorbate / glyoxylate
+C00072,Vitamin C,5066,PAM,M13,Retained,Yes,Ascorbate / glyoxylate
+C01041,Semidehydroascorbic acid,5066,PAM,M13,Retained,Yes,Ascorbate / glyoxylate
+C14818,Iron(2+),1356,CP,M4,Retained,Yes,Iron
+C14819,Iron(3+),1356,CP,M4,Retained,Yes,Iron
+C00376,all-trans-Retinene,8854,ALDH1A2,M6,Retained,Yes,Retinoid
+C00777,all-trans-Vitamin A1 acid,8854,ALDH1A2,M6,Retained,Yes,Retinoid
+C15493,9-cis-Retinoic acid,8854,ALDH1A2,M6,Retained,Yes,Retinoid
+C16681,9-cis-Retinal,8854,ALDH1A2,M6,Retained,Yes,Retinoid
+C00376,all-trans-Retinene,220,ALDH1A3,M6,Retained,Yes,Retinoid
+C00777,all-trans-Vitamin A1 acid,220,ALDH1A3,M6,Retained,Yes,Retinoid
+C15493,9-cis-Retinoic acid,220,ALDH1A3,M6,Retained,Yes,Retinoid
+C16681,9-cis-Retinal,220,ALDH1A3,M6,Retained,Yes,Retinoid
+C00219,"(5Z,8Z,11Z,14Z)-Icosa-5,8,11,14-tetraenoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C00280,"4-Androstene-3,17-dione",1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C00468,"3-Hydroxy-1,3,5(10)-estratrien-17-one",1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C00535,17beta-Hydroxy-4-androsten-3-one,1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C00777,all-trans-Vitamin A1 acid,1544,CYP1A2,M6,Retained,Yes,Retinoid
+C00951,beta-Estradiol,1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C01227,DHEA,1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C01595,"9-cis,12-cis-Octadecadienoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C01598,N-Acetyl-5-methoxytryptamine,1544,CYP1A2,M6,Retained,Yes,Melatonin metabolite
+C05139,"5-Androstene-3beta,16alpha-diol-17-one",1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C05141,"1,3,5(10)-Estratriene-3,16-alpha,17beta-triol",1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C05291,7alpha-Hydroxytestosterone,1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C05296,7alpha-Hydroxyandrostenedione,1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C05298,2-Hydroxyestrone,1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C05300,16alpha-Hydroxyestrone,1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C05301,2-OH-Estradiol,1544,CYP1A2,M6,Retained,Yes,Steroid hormone
+C05643,6-Hydroxymelatonin,1544,CYP1A2,M6,Retained,Yes,Melatonin metabolite
+C05966,"(5Z,8Z,11Z,13E)-(15S)-15-Hydroperoxyicosa-5,8,11,13-tetraenoate",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14749,(19S)-Hydroxy arachidonic acid,1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14768,"(8Z,11Z,14Z)-5,6-Epoxyicosa-8,11,14-trienoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14769,"(5Z,11Z,14Z)-8,9-Epoxyicosa-5,11,14-trienoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14770,"(5Z,8Z,14Z)-11,12-Epoxyicosa-5,8,14-trienoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14771,"(5Z,8Z,11Z)-14,15-Epoxyicosa-5.8.11-trienoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14778,"(5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyicosa-5,8,11,14-tetraenoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14781,"(5Z,8Z,13E)-(15S)-11,12-Epoxy-15-hydroxyicosa-5,8,13-trienoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14782,"(5Z,8Z,13E)-(15S)-11,12,15-Trihydroxyicosa-5,8,12-trienoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14813,"(5Z,8Z,12E)-14,15-Epoxy-11-hydroxyicosa-5,8,12-trienoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14814,"(5Z,8Z,12E)-11,14,15-Trihydroxyicosa-5,8,12-trienoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14825,"(9R,10S)-(12Z)-9,10-Epoxyoctadecenoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C14826,"(12R,13S)-(9Z)-12,13-Epoxyoctadecenoic acid",1544,CYP1A2,M6,Retained,Yes,Fatty acid / eicosanoid
+C16677,all-trans-4-Hydroxyretinoic acid,1544,CYP1A2,M6,Retained,Yes,Retinoid
+C16679,all-trans-18-Hydroxyretinoic acid,1544,CYP1A2,M6,Retained,Yes,Retinoid
+C16680,"all-trans-5,6-Epoxy-5,6-dihydroretinoic acid",1544,CYP1A2,M6,Retained,Yes,Retinoid
+C00219,"(5Z,8Z,11Z,14Z)-Icosa-5,8,11,14-tetraenoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C00280,"4-Androstene-3,17-dione",1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C00468,"3-Hydroxy-1,3,5(10)-estratrien-17-one",1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C00535,17beta-Hydroxy-4-androsten-3-one,1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C00777,all-trans-Vitamin A1 acid,1545,CYP1B1,M6,Retained,Yes,Retinoid
+C00951,beta-Estradiol,1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C01227,DHEA,1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C01595,"9-cis,12-cis-Octadecadienoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C01598,N-Acetyl-5-methoxytryptamine,1545,CYP1B1,M6,Retained,Yes,Melatonin metabolite
+C05139,"5-Androstene-3beta,16alpha-diol-17-one",1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C05141,"1,3,5(10)-Estratriene-3,16-alpha,17beta-triol",1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C05291,7alpha-Hydroxytestosterone,1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C05296,7alpha-Hydroxyandrostenedione,1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C05298,2-Hydroxyestrone,1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C05300,16alpha-Hydroxyestrone,1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C05301,2-OH-Estradiol,1545,CYP1B1,M6,Retained,Yes,Steroid hormone
+C05643,6-Hydroxymelatonin,1545,CYP1B1,M6,Retained,Yes,Melatonin metabolite
+C05966,"(5Z,8Z,11Z,13E)-(15S)-15-Hydroperoxyicosa-5,8,11,13-tetraenoate",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14749,(19S)-Hydroxy arachidonic acid,1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14768,"(8Z,11Z,14Z)-5,6-Epoxyicosa-8,11,14-trienoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14769,"(5Z,11Z,14Z)-8,9-Epoxyicosa-5,11,14-trienoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14770,"(5Z,8Z,14Z)-11,12-Epoxyicosa-5,8,14-trienoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14771,"(5Z,8Z,11Z)-14,15-Epoxyicosa-5.8.11-trienoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14778,"(5Z,8Z,11Z,14Z)-(16R)-16-Hydroxyicosa-5,8,11,14-tetraenoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14781,"(5Z,8Z,13E)-(15S)-11,12-Epoxy-15-hydroxyicosa-5,8,13-trienoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14782,"(5Z,8Z,13E)-(15S)-11,12,15-Trihydroxyicosa-5,8,12-trienoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14813,"(5Z,8Z,12E)-14,15-Epoxy-11-hydroxyicosa-5,8,12-trienoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14814,"(5Z,8Z,12E)-11,14,15-Trihydroxyicosa-5,8,12-trienoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14825,"(9R,10S)-(12Z)-9,10-Epoxyoctadecenoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C14826,"(12R,13S)-(9Z)-12,13-Epoxyoctadecenoic acid",1545,CYP1B1,M6,Retained,Yes,Fatty acid / eicosanoid
+C16677,all-trans-4-Hydroxyretinoic acid,1545,CYP1B1,M6,Retained,Yes,Retinoid
+C16679,all-trans-18-Hydroxyretinoic acid,1545,CYP1B1,M6,Retained,Yes,Retinoid
+C16680,"all-trans-5,6-Epoxy-5,6-dihydroretinoic acid",1545,CYP1B1,M6,Retained,Yes,Retinoid
+C00002,ATP,695,BTK,M1,Removed: currency metabolite / cofactor,No,
+C00008,ADP,695,BTK,M1,Removed: currency metabolite / cofactor,No,
+C00005,NADPH,1718,DHCR24,M1,Removed: currency metabolite / cofactor,No,
+C00006,NADP+,1718,DHCR24,M1,Removed: currency metabolite / cofactor,No,
+C00080,H+,1718,DHCR24,M1,Removed: currency metabolite / cofactor,No,
+C00017,Protein,8997,KALRN,M1,Removed: non-specific KEGG entry,No,
+C00017,Protein,57787,MARK4,M10,Removed: non-specific KEGG entry,No,
+C02179,Peptidyl amide,5066,PAM,M13,Removed: non-specific KEGG entry,No,
+C03303,Peptidyl(2-hydroxyglycine),5066,PAM,M13,Removed: non-specific KEGG entry,No,
+C00002,ATP,1445,CSK,M2,Removed: currency metabolite / cofactor,No,
+C00008,ADP,1445,CSK,M2,Removed: currency metabolite / cofactor,No,
+C00001,H2O,1356,CP,M4,Removed: currency metabolite / cofactor,No,
+C00007,Oxygen,1356,CP,M4,Removed: currency metabolite / cofactor,No,
+C00080,H+,1356,CP,M4,Removed: currency metabolite / cofactor,No,
+C00001,H2O,8854,ALDH1A2,M6,Removed: currency metabolite / cofactor,No,
+C00003,NAD+,8854,ALDH1A2,M6,Removed: currency metabolite / cofactor,No,
+C00004,NADH,8854,ALDH1A2,M6,Removed: currency metabolite / cofactor,No,
+C00080,H+,8854,ALDH1A2,M6,Removed: currency metabolite / cofactor,No,
+C00001,H2O,220,ALDH1A3,M6,Removed: currency metabolite / cofactor,No,
+C00003,NAD+,220,ALDH1A3,M6,Removed: currency metabolite / cofactor,No,
+C00004,NADH,220,ALDH1A3,M6,Removed: currency metabolite / cofactor,No,
+C00080,H+,220,ALDH1A3,M6,Removed: currency metabolite / cofactor,No,
+C00001,H2O,1544,CYP1A2,M6,Removed: currency metabolite / cofactor,No,
+C00003,NAD+,1544,CYP1A2,M6,Removed: currency metabolite / cofactor,No,
+C00004,NADH,1544,CYP1A2,M6,Removed: currency metabolite / cofactor,No,
+C00005,NADPH,1544,CYP1A2,M6,Removed: currency metabolite / cofactor,No,
+C00006,NADP+,1544,CYP1A2,M6,Removed: currency metabolite / cofactor,No,
+C00007,Oxygen,1544,CYP1A2,M6,Removed: currency metabolite / cofactor,No,
+C00067,Formalin,1544,CYP1A2,M6,Removed: non-specific KEGG entry,No,
+C00080,H+,1544,CYP1A2,M6,Removed: currency metabolite / cofactor,No,
+C00087,Elemental sulfur,1544,CYP1A2,M6,Removed: non-specific KEGG entry,No,
+C00162,Fatty acid,1544,CYP1A2,M6,Removed: non-specific KEGG entry,No,
+C00829,Naphthalene,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C01371,RH,1544,CYP1A2,M6,Removed: non-specific KEGG entry,No,
+C01516,Morphine,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C05011,4-Hydroxytamoxifen,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C05102,2-Hydroxy fatty acid,1544,CYP1A2,M6,Removed: non-specific KEGG entry,No,
+C06174,"(5alpha,6alpha)-7,8-Didehydro-4,5-epoxy-3-methoxy-17-methylmorphinan-6-ol",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C06604,DNTP,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C06606,"O,O-Diethyl-O-p-nitrophenylphosphoric acid",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C06754,2-Chloroethanal,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C06790,TCE,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C06800,Aflatoxin B1,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C06868,Carbamazepine,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C07047,Isophosphamide,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C07073,Lidocaine,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C07108,Tamoxifen,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C07481,"1,3,7-Trimethylxanthine",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C07496,Carbamazepine epoxide,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C07535,Benzpyrene,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C07572,Citalopram,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C11148,Trichloroepoxyethane,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C11785,Normorphine,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C13747,Paraxanthine,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14040,1-Nitronaphthalene,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14556,9-Hydroxybenzo[a]pyrene,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14786,"(1R,2S)-Naphthalene epoxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14787,"(1S,2R)-Naphthalene epoxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14800,"1-Nitronaphthalene-5,6-oxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14802,"1-Nitronaphthalene-7,8-oxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14849,"Benzo[a]pyrene-9,10-epoxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14850,"Benzo[a]pyrene-7,8-epoxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14851,"Benzo[a]pyrene-4,5-epoxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14852,"Benzo[a]pyrene-7,8-dihydrodiol",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14853,"7,8-Dihydro-7,8-dihydroxybenzo[a]pyrene 9,10-oxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14854,"9-Hydroxybenzo[a]pyrene-4,5-epoxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C14866,Trichloroacetaldehyde,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16356,"1,7-Dimethyluric acid",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16358,1-Methylxanthine,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16453,NNK,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16546,N-Desmethyltamoxifen,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16547,4-Hydroxy-N-desmethyltamoxifen,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16550,3-Dechloroethylifosfamide,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16555,2-Dechloroethylifosfamide,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16560,3-Hydroxylidocaine,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16561,Monoethylglycinexylidide,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16607,Citalopram N-oxide,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16608,Demethylcitalopram,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16609,Didemethylcitalopram,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C16756,Aflatoxin M1,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19488,DMBA,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19489,"1a,11b-Dihydro-4,9-dimethylbenz[a]anthra[3,4-b]oxirene",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19490,"trans-DMBA-3,4-dihydrodiol",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19559,"(1aalpha,2beta,3alpha,11calpha)-1a,2,3,11c-Tetrahydro-6,11-dimethylbenzo[6,7]phenanthro[3,4-b]oxirene-2,3-diol",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19563,4-[(Hydroxymethyl)nitrosoamino]-1-(3-pyridinyl)-1-butanone,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19566,4-Hydroxy-4-(methylnitrosoamino)-1-(3-pyridinyl)-1-butanone,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19574,NNAL,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19577,"1-(Methylnitrosoamino)-4-(3-pyridinyl)-1,4-butanediol",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19580,alpha-[3-[(Hydroxymethyl)nitrosoamino]propyl]-3-pyridinemethanol,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19585,Aflatoxin Q1,1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19586,"2,3-Epoxyaflatoxin B1",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19594,"Aflatoxin-M1-8,9-epoxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19595,"Aflatoxin B1-endo-8,9-epoxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C19604,"DMBA-5,6-epoxide",1544,CYP1A2,M6,Removed: xenobiotic / drug,No,
+C00001,H2O,1545,CYP1B1,M6,Removed: currency metabolite / cofactor,No,
+C00003,NAD+,1545,CYP1B1,M6,Removed: currency metabolite / cofactor,No,
+C00004,NADH,1545,CYP1B1,M6,Removed: currency metabolite / cofactor,No,
+C00005,NADPH,1545,CYP1B1,M6,Removed: currency metabolite / cofactor,No,
+C00006,NADP+,1545,CYP1B1,M6,Removed: currency metabolite / cofactor,No,
+C00007,Oxygen,1545,CYP1B1,M6,Removed: currency metabolite / cofactor,No,
+C00067,Formalin,1545,CYP1B1,M6,Removed: non-specific KEGG entry,No,
+C00080,H+,1545,CYP1B1,M6,Removed: currency metabolite / cofactor,No,
+C00087,Elemental sulfur,1545,CYP1B1,M6,Removed: non-specific KEGG entry,No,
+C00162,Fatty acid,1545,CYP1B1,M6,Removed: non-specific KEGG entry,No,
+C00829,Naphthalene,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C01371,RH,1545,CYP1B1,M6,Removed: non-specific KEGG entry,No,
+C01516,Morphine,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C05011,4-Hydroxytamoxifen,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C05102,2-Hydroxy fatty acid,1545,CYP1B1,M6,Removed: non-specific KEGG entry,No,
+C06174,"(5alpha,6alpha)-7,8-Didehydro-4,5-epoxy-3-methoxy-17-methylmorphinan-6-ol",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C06604,DNTP,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C06606,"O,O-Diethyl-O-p-nitrophenylphosphoric acid",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C06754,2-Chloroethanal,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C06790,TCE,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C06800,Aflatoxin B1,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C06868,Carbamazepine,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C07047,Isophosphamide,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C07073,Lidocaine,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C07108,Tamoxifen,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C07481,"1,3,7-Trimethylxanthine",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C07496,Carbamazepine epoxide,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C07535,Benzpyrene,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C07572,Citalopram,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C11148,Trichloroepoxyethane,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C11785,Normorphine,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C13747,Paraxanthine,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14040,1-Nitronaphthalene,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14556,9-Hydroxybenzo[a]pyrene,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14786,"(1R,2S)-Naphthalene epoxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14787,"(1S,2R)-Naphthalene epoxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14800,"1-Nitronaphthalene-5,6-oxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14802,"1-Nitronaphthalene-7,8-oxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14849,"Benzo[a]pyrene-9,10-epoxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14850,"Benzo[a]pyrene-7,8-epoxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14851,"Benzo[a]pyrene-4,5-epoxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14852,"Benzo[a]pyrene-7,8-dihydrodiol",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14853,"7,8-Dihydro-7,8-dihydroxybenzo[a]pyrene 9,10-oxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14854,"9-Hydroxybenzo[a]pyrene-4,5-epoxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C14866,Trichloroacetaldehyde,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16356,"1,7-Dimethyluric acid",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16358,1-Methylxanthine,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16453,NNK,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16546,N-Desmethyltamoxifen,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16547,4-Hydroxy-N-desmethyltamoxifen,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16550,3-Dechloroethylifosfamide,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16555,2-Dechloroethylifosfamide,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16560,3-Hydroxylidocaine,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16561,Monoethylglycinexylidide,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16607,Citalopram N-oxide,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16608,Demethylcitalopram,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16609,Didemethylcitalopram,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C16756,Aflatoxin M1,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19488,DMBA,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19489,"1a,11b-Dihydro-4,9-dimethylbenz[a]anthra[3,4-b]oxirene",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19490,"trans-DMBA-3,4-dihydrodiol",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19559,"(1aalpha,2beta,3alpha,11calpha)-1a,2,3,11c-Tetrahydro-6,11-dimethylbenzo[6,7]phenanthro[3,4-b]oxirene-2,3-diol",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19563,4-[(Hydroxymethyl)nitrosoamino]-1-(3-pyridinyl)-1-butanone,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19566,4-Hydroxy-4-(methylnitrosoamino)-1-(3-pyridinyl)-1-butanone,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19574,NNAL,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19577,"1-(Methylnitrosoamino)-4-(3-pyridinyl)-1,4-butanediol",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19580,alpha-[3-[(Hydroxymethyl)nitrosoamino]propyl]-3-pyridinemethanol,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19585,Aflatoxin Q1,1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19586,"2,3-Epoxyaflatoxin B1",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19594,"Aflatoxin-M1-8,9-epoxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19595,"Aflatoxin B1-endo-8,9-epoxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,
+C19604,"DMBA-5,6-epoxide",1545,CYP1B1,M6,Removed: xenobiotic / drug,No,

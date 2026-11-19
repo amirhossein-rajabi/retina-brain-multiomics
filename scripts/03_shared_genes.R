@@ -5,11 +5,12 @@
 #   PCOL=pvalue Rscript scripts/03_shared_genes.R      # nominal P < 0.05 (used in the manuscript)
 #   LFC=0.5 sets the |log2FC| threshold (default 0.5)
 suppressMessages({library(ggVennDiagram); library(ggplot2); library(writexl)})
-LFC <- as.numeric(Sys.getenv("LFC", "0.5")); FDR <- 0.05; PCOL <- Sys.getenv("PCOL", "padj")  # "padj" (FDR) or "pvalue" (nominal)
+LFC <- as.numeric(Sys.getenv("LFC", "0.5")); ALPHA <- 0.05
+PCOL <- Sys.getenv("PCOL", "padj")  # significance column: "padj" (BH-FDR) or "pvalue" (nominal P)
 deg <- readRDS("results/DEG/all_DEG.rds")
 lab <- c(AD = "Alzheimer", PD = "Parkinson", AMD = "AMD", DR = "Diabetic retinopathy", GL = "Glaucoma")
-sets <- lapply(deg, function(r) r$gene[r[[PCOL]] < FDR & abs(r$log2FC) > LFC])
-cat("LFC >", LFC, "| DEGs:", paste(names(sets), lengths(sets), collapse = ", "), "\n")
+sets <- lapply(deg, function(r) r$gene[r[[PCOL]] < ALPHA & abs(r$log2FC) > LFC])
+cat(PCOL, "<", ALPHA, "| LFC >", LFC, "| DEGs:", paste(names(sets), lengths(sets), collapse = ", "), "\n")
 
 genes <- unique(unlist(sets))
 tab <- data.frame(gene = genes)
@@ -35,7 +36,7 @@ if (nrow(shared)) print(shared[, c("gene", "diseases", "direction")], row.names 
 names(sets) <- lab[names(sets)]
 p <- ggVennDiagram(sets, label = "count", label_alpha = 0, set_size = 4) +
   scale_fill_gradient(low = "#F4F6FA", high = "#3A6EA5") + theme(legend.position = "none") +
-  labs(title = sprintf("Overlap of DEGs (%s < 0.05, |log2FC| > %s)", ifelse(PCOL == "padj", "FDR", "P"), LFC)) +
+  labs(title = sprintf("Overlap of DEGs (%s < %s, |log2FC| > %s)", ifelse(PCOL == "padj", "FDR", "P"), ALPHA, LFC)) +
   scale_x_continuous(expand = expansion(mult = 0.15))
 ggsave(sprintf("results/Venn_%s.png", tag), p, width = 9, height = 8, dpi = 300)
 ggsave(sprintf("results/Venn_%s.pdf", tag), p, width = 9, height = 8)

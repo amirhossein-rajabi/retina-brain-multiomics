@@ -20,26 +20,26 @@ retina–brain interface.
 
 ```mermaid
 flowchart LR
-    subgraph G[Genomic layer]
-        G1[GWAS Catalog<br/>P &lt; 5e-8] --> G3[HGNC harmonisation]
-        G2[ClinVar<br/>P/LP, ≥2 stars] --> G3
+    subgraph G["Genomic layer"]
+        G1["GWAS Catalog<br/>P < 5e-8"] --> G3["HGNC harmonisation"]
+        G2["ClinVar<br/>P/LP, ≥ 2 stars"] --> G3
     end
-    subgraph T[Transcriptomic layer]
-        T1[5 GEO datasets] --> T2[limma / DESeq2<br/>P &lt; 0.05, abs log2FC &gt; 0.5]
+    subgraph T["Transcriptomic layer"]
+        T1["5 GEO datasets"] --> T2["limma / DESeq2<br/>P < 0.05, |log2FC| > 0.5"]
     end
-    G3 --> S[Shared genes<br/>≥1 neuro + ≥1 ophthalmic<br/>permutation test]
+    G3 --> S["Shared genes<br/>≥ 1 neuro + ≥ 1 ophthalmic<br/>permutation test"]
     T2 --> S
-    S --> N[STRING PPI network<br/>Gephi: hubs, Louvain modules]
-    N --> R[TF · miRNA · metabolite layers<br/>OmicsNet 2.0]
-    N --> E[Functional enrichment<br/>g:Profiler]
+    S --> N["STRING PPI network<br/>Gephi: hubs, Louvain modules"]
+    N --> R["TF, miRNA and metabolite layers<br/>OmicsNet 2.0"]
+    N --> E["Functional enrichment<br/>g:Profiler"]
 ```
 
 | Step | What is done | Where |
 |---|---|---|
-| Genomic layer | Disease-associated loci from the GWAS Catalog and ClinVar, merged per disease and harmonised to HGNC symbols | `scripts/05`, `scripts/06` |
-| Transcriptomic layer | Sample selection and differential expression in one disease-relevant tissue per disease | `scripts/01`–`scripts/02` |
-| Shared genes | Genes present in ≥ 2 diseases including ≥ 1 neurodegenerative and ≥ 1 ophthalmic disease; size-matched permutation test (10,000 iterations) | `scripts/03`, `scripts/04`, `scripts/06` |
-| Network, regulatory and enrichment analyses | STRING v12.5, Gephi 0.11.3, OmicsNet 2.0 (TRRUST, miRTarBase v9.0, KEGG), g:Profiler | Web tools (see Methods of the manuscript) |
+| Genomic layer | Disease-associated loci from the GWAS Catalog and ClinVar, merged per disease and harmonised to HGNC symbols; shared genes and permutation test | `scripts/06` |
+| Transcriptomic layer | Sample selection and differential expression in one disease-relevant tissue per disease | `scripts/01`–`02` |
+| Transcriptomic shared genes | DEG membership across diseases, direction of change and permutation test | `scripts/03`–`05` |
+| Network, regulatory and enrichment analyses | STRING v12.5, Gephi 0.11.3, OmicsNet 2.0 (TRRUST, miRTarBase v9.0, KEGG), g:Profiler (web tools) | [`network_analysis/`](network_analysis) |
 
 ### Transcriptomic datasets
 
@@ -71,18 +71,22 @@ flowchart LR
 ```
 .
 ├── scripts/
-│   ├── 00_install.R                    # R/Bioconductor dependencies
-│   ├── 01_metadata_explore.R           # download GEO series, parse sample metadata
-│   ├── 02_DEG.R                        # sample selection, Table 4, differential expression
-│   ├── 03_shared_genes.R               # DEG membership across diseases, Venn diagram
-│   ├── 04_shared_neuro_ophth_2plus.R   # transcriptomic shared genes + direction of change
-│   ├── 05_genomics_overlap.py          # exploratory genomic overlap and permutation test
-│   └── 06_genomics_and_supp.py         # genomic shared genes, permutation test, figures, Tables S1–S5
-├── data/                               # input data (not tracked, see data/README.md)
-├── results/                            # generated outputs (not tracked)
-├── run_pipeline.sh                     # runs the full pipeline
-├── requirements.txt                    # Python dependencies
-├── CITATION.cff                        # citation metadata
+│   ├── 00_install.R                      # R/Bioconductor dependencies
+│   ├── 01_download_geo.R                 # GEO series matrices, sample metadata, count files
+│   ├── 02_DEG.R                          # sample selection, dataset table, differential expression
+│   ├── 03_shared_genes.R                 # DEG membership across diseases, Venn diagram
+│   ├── 04_shared_neuro_ophth_2plus.R     # transcriptomic shared genes and direction of change
+│   ├── 05_transcriptomic_permutation.py  # permutation test, transcriptomic layer
+│   ├── 06_genomic_layer.py               # genomic shared genes, permutation test, tables, Venn diagrams
+│   └── exploratory/                      # analyses not used in the study
+├── data/
+│   ├── genomics/                         # GWAS Catalog and ClinVar gene lists (snapshot)
+│   └── reference/                        # HGNC protein-coding genes (snapshot)
+├── network_analysis/                     # STRING, Gephi, OmicsNet and g:Profiler inputs and results
+├── results/                              # generated outputs (not tracked)
+├── run_pipeline.sh                       # runs the full pipeline
+├── requirements.txt                      # Python dependencies
+├── CITATION.cff
 └── LICENSE
 ```
 
@@ -90,9 +94,11 @@ flowchart LR
 
 ### Requirements
 
-- **R ≥ 4.6** with Bioconductor 3.23 — GEOquery, limma, DESeq2, AnnotationDbi,
-  org.Hs.eg.db, hgu133plus2.db, huex10sttranscriptcluster.db, ggVennDiagram, writexl
-- **Python ≥ 3.10** — numpy, pandas, matplotlib, venn, openpyxl
+- **R 4.6** with Bioconductor 3.23 — GEOquery, limma, DESeq2, AnnotationDbi,
+  org.Hs.eg.db, hgu133plus2.db, huex10sttranscriptcluster.db, ggplot2, ggVennDiagram,
+  writexl (installed by `scripts/00_install.R`)
+- **Python 3.10+** — numpy, pandas, matplotlib, venn, openpyxl (versions in
+  `requirements.txt`)
 
 ```bash
 git clone https://github.com/amirhossein-rajabi/retina-brain-multiomics.git
@@ -103,8 +109,9 @@ python3 -m pip install -r requirements.txt
 
 ### Data
 
-Download the input files and arrange them as described in
-[`data/README.md`](data/README.md).
+The genomic gene lists and the HGNC reference are included in `data/`. The GEO
+datasets are downloaded by `scripts/01_download_geo.R`. See
+[`data/README.md`](data/README.md) for sources and search terms.
 
 ### Run
 
@@ -117,30 +124,33 @@ bash run_pipeline.sh
 or step by step:
 
 ```bash
-Rscript scripts/01_metadata_explore.R GSE48350 GSE114517 GSE115828 GSE160306 GSE45570
+Rscript scripts/01_download_geo.R
 Rscript scripts/02_DEG.R
 PCOL=pvalue Rscript scripts/03_shared_genes.R
 Rscript scripts/04_shared_neuro_ophth_2plus.R
-python3 scripts/06_genomics_and_supp.py
+python3 scripts/05_transcriptomic_permutation.py
+python3 scripts/06_genomic_layer.py
 ```
 
-`03_shared_genes.R` reads two environment variables: `LFC` (|log2FC| threshold,
-default `0.5`) and `PCOL` (`padj` for FDR, the default, or `pvalue` for nominal *P*).
-The manuscript uses nominal *P* < 0.05, because an FDR threshold yields no DEGs in
-the glaucoma dataset.
+DEGs were defined with both a Benjamini–Hochberg FDR and a nominal *P* threshold.
+The study uses nominal *P* < 0.05, because FDR < 0.05 yields no DEGs in the glaucoma
+dataset; `02_DEG.R` reports both counts. `03_shared_genes.R` reads two environment
+variables: `PCOL` (`padj` for FDR, the default, or `pvalue` for nominal *P*) and `LFC`
+(|log2FC| threshold, default `0.5`).
 
 ### Outputs
 
 | File | Content |
 |---|---|
-| `results/Table1_metadata.csv` | Dataset characteristics (manuscript Table 4) |
+| `results/Table1_metadata.csv` | Dataset characteristics |
 | `results/TableS1_samples.csv` | Included and excluded samples with reasons |
 | `results/DEG/<disease>_all_genes.csv` | Full differential expression results |
 | `results/all_DEG_membership_*.csv` | DEG membership and log2FC across diseases |
 | `results/Shared_genes_neuro_ophthalmic_2plus.xlsx` | Transcriptomic shared genes with direction of change |
-| `results/genomics/Supplementary_Tables.xlsx` | Supplementary Tables S1–S5 |
-| `results/genomics/figs/` | Genomic and transcriptomic Venn diagrams (PNG, PDF) |
-| `results/genomics/summary_numbers.json` | Counts and permutation results reported in the text |
+| `results/transcriptomic_permutation.json` | Permutation test, transcriptomic layer |
+| `results/genomics/genomic_and_shared_gene_tables.xlsx` | Samples, gene entities per disease, shared genes of both layers, search terms |
+| `results/genomics/summary_numbers.json` | Genomic counts and permutation test |
+| `results/genomics/figs/` | Venn diagrams of both layers (PNG, PDF) |
 
 ## Methods in brief
 
@@ -156,14 +166,16 @@ group) and analysed with DESeq2. DEGs: *P* < 0.05 and |log2FC| > 0.5.
 
 **Shared genes and permutation test.** Shared genes are present in ≥ 2 diseases,
 including at least one neurodegenerative and one ophthalmic disease. Significance was
-assessed by drawing size-matched random gene sets (10,000 iterations; empirical
-*P* = (r + 1)/(n + 1)).
+assessed with 10,000 size-matched random gene sets per disease, drawn from the HGNC
+protein-coding genes (genomic layer) or from the genes tested in each dataset
+(transcriptomic layer); empirical *P* = (r + 1)/(n + 1).
 
 ## Software versions
 
 R 4.6.1, Bioconductor 3.23, GEOquery 2.80.0, limma 3.68.5, DESeq2 1.52.0,
 AnnotationDbi 1.74.0, org.Hs.eg.db 3.23.1, hgu133plus2.db 3.13.0,
-huex10sttranscriptcluster.db 8.8.0; STRING v12.5; Gephi 0.11.3; OmicsNet 2.0;
+huex10sttranscriptcluster.db 8.8.0; Python 3.14 with numpy, pandas, matplotlib and
+venn (see `requirements.txt`); STRING v12.5; Gephi 0.11.3; OmicsNet 2.0;
 g:Profiler e114_eg62_p19_9dc92ac8.
 
 ## Author

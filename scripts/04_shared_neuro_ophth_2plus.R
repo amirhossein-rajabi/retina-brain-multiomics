@@ -8,7 +8,7 @@ d <- c("AD","PD","AMD","DR","GL")
 s <- t[t$neuro & t$ophthalmic & t$n_diseases >= 2, ]
 fc <- as.matrix(s[paste0(d, "_log2FC")]); hit <- as.matrix(s[d])
 s$direction <- sapply(seq_len(nrow(s)), function(i) { x <- fc[i, hit[i, ]]; if (all(x > 0)) "all up" else if (all(x < 0)) "all down" else "discordant" })
-s$criterion <- ifelse(s$n_diseases >= 3, ">=3 diseases (previous list)", "2 diseases (new)")
+s$criterion <- ifelse(s$n_diseases >= 3, ">=3 diseases", "2 diseases")
 s <- s[order(-s$n_diseases, s$diseases, s$gene), ]
 out <- s[c("gene","n_diseases","diseases","direction","criterion", as.vector(rbind(paste0(d,"_log2FC"), paste0(d,"_padj"))))]
 pv <- function(dd) { r <- readRDS("results/DEG/all_DEG.rds")[[dd]]; r$pvalue[match(out$gene, r$gene)] }
@@ -19,6 +19,6 @@ write_xlsx(list(Shared_genes = out,
     "AD=GSE48350 hippocampus; PD=GSE114517 substantia nigra; AMD=GSE115828 MGS4 vs MGS1; DR=GSE160306 macula NPDR+PDR vs control; GL=GSE45570 optic nerve head POAG vs control",
     "direction: concordant up/down across the diseases where the gene is significant; NA = gene not tested in that dataset"))),
   "results/Shared_genes_neuro_ophthalmic_2plus.xlsx")
-cat("Total:", nrow(out), "| >=3:", sum(out$n_diseases >= 3), "| 2 (new):", sum(out$n_diseases == 2), "\n")
+cat("Total:", nrow(out), "| >=3 diseases:", sum(out$n_diseases >= 3), "| 2 diseases:", sum(out$n_diseases == 2), "\n")
 print(table(out$diseases[out$n_diseases == 2], out$direction[out$n_diseases == 2]))
 for (p in unique(out$diseases)) cat(p, ":", paste(out$gene[out$diseases == p], collapse = ", "), "\n")

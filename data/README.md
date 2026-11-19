@@ -1,48 +1,51 @@
 # Input data
 
-Raw data are not tracked in this repository. Place the files below in `data/`
-(paths are relative to the repository root) before running the pipeline.
+## Genomic layer (included)
 
-## Transcriptomic layer (GEO)
+`data/genomics/` contains the gene lists used in the study, one file per disease and
+source, with gene symbols in the first column. They were exported from the
+[NHGRI-EBI GWAS Catalog](https://www.ebi.ac.uk/gwas/) (mapped genes of associations
+with *P* < 5 × 10⁻⁸) and [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/)
+(pathogenic / likely pathogenic, review status ≥ 2 stars), accessed on
+12 November 2026. Both databases are updated continuously, so these files are kept
+as a snapshot.
 
-Series matrices and the parsed metadata (`<GSE>_meta.rds`) are created by
-`scripts/01_metadata_explore.R`. Supplementary count files must be downloaded
-from the GEO pages of each series.
-
-| Disease | Accession | Files expected in `data/` | Source |
-|---|---|---|---|
-| AD | [GSE48350](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE48350) | `GSE48350_series_matrix.txt.gz`, `GSE48350_meta.rds` | `01_metadata_explore.R` |
-| PD | [GSE114517](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE114517) | `GSE114517_meta.rds`, `PD/GSM*_*.tabular.txt.gz` | `GSE114517_RAW.tar` (extract into `data/PD/`) |
-| AMD | [GSE115828](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115828) | `GSE115828_meta.rds`, `AMD/GSE115828_RSEM_gene_counts.tsv.gz` | GEO supplementary file |
-| DR | [GSE160306](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE160306) | `GSE160306_meta.rds`, `DR/GSE160306_counts.txt.gz` | GEO supplementary file |
-| Glaucoma | [GSE45570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45570) | `GSE45570_series_matrix.txt.gz`, `GSE45570_meta.rds` | `01_metadata_explore.R` |
-
-## Genomic layer (GWAS Catalog and ClinVar)
-
-One gene list per disease and source, with gene symbols in the first column.
-Lists were exported from the [NHGRI-EBI GWAS Catalog](https://www.ebi.ac.uk/gwas/)
-(mapped genes of associations with P < 5 × 10⁻⁸) and
-[ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) (pathogenic / likely pathogenic,
-review status ≥ 2 stars). Search terms are listed in Supplementary Table S5.
-
-```
-data/genomics/
-├── ADgenesGWAS.csv          ADgenesClinvar.csv
-├── PDgenesGWAS.csv          PDGenesClinvar.csv
-├── AMDgenesGWAS.csv         ARMDgenesClinvar.csv
-├── DRgenesGWAS.csv          (no ClinVar records)
-└── GlaucomagenesGWAS.csv    GlaucomaGenesClinVar.csv
-```
+| Disease | GWAS Catalog | ClinVar |
+|---|---|---|
+| AD | `ADgenesGWAS.csv` | `ADgenesClinvar.csv` |
+| PD | `PDgenesGWAS.csv` | `PDGenesClinvar.csv` |
+| AMD | `AMDgenesGWAS.csv` | `ARMDgenesClinvar.csv` |
+| DR | `DRgenesGWAS.csv` | no records met the criteria |
+| Glaucoma | `GlaucomagenesGWAS.csv` | `GlaucomaGenesClinVar.csv` |
 
 Intergenic entries are written as `GENE1 x GENE2`.
 
-## Reference
+Search terms (*Homo sapiens*):
 
-`data/reference/hgnc_protein_coding.txt` — HGNC protein-coding gene set
-(tab-separated, with the columns `symbol` and `prev_symbol`), available from
-[genenames.org](https://www.genenames.org/download/statistics-and-files/)
-("Locus groups → protein-coding genes").
+| Disease | GWAS Catalog traits | ClinVar conditions |
+|---|---|---|
+| AD | Alzheimer's disease; late-onset; early-onset | Alzheimer disease; familial Alzheimer disease |
+| PD | Parkinson's disease; early-onset | Parkinson disease; early-onset Parkinson disease |
+| AMD | age-related macular degeneration; neovascular (wet) AMD; geographic atrophy; advanced AMD | age-related macular degeneration |
+| DR | diabetic retinopathy; proliferative DR; non-proliferative DR; diabetic macular edema | diabetic retinopathy; proliferative DR; non-proliferative DR |
+| Glaucoma | glaucoma; primary open-angle glaucoma; normal-tension glaucoma | glaucoma; primary open-angle glaucoma; normal-tension glaucoma |
 
-The manuscript used the HGNC release accessed on 14 November 2026 (19,276
-protein-coding genes). HGNC is updated continuously, so a later release can shift
-counts slightly (for example, a locus newly classified as protein-coding).
+## Reference (included)
+
+`data/reference/hgnc_protein_coding.txt` — snapshot of the HGNC protein-coding gene
+set (19,276 genes; columns `hgnc_id`, `symbol`, `prev_symbol`) from
+[genenames.org](https://www.genenames.org/download/statistics-and-files/). It is used
+to harmonise symbols and as the universe of the genomic permutation test.
+
+## Transcriptomic layer (downloaded)
+
+The GEO files are not tracked. `scripts/01_download_geo.R` downloads them into
+`data/`:
+
+| Disease | Accession | Files |
+|---|---|---|
+| AD | [GSE48350](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE48350) | series matrix |
+| PD | [GSE114517](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE114517) | series matrix, `GSE114517_RAW.tar` → `data/PD/` |
+| AMD | [GSE115828](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE115828) | series matrix, `GSE115828_RSEM_gene_counts.tsv.gz` → `data/AMD/` |
+| DR | [GSE160306](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE160306) | series matrix, gene counts → `data/DR/GSE160306_counts.txt.gz` |
+| Glaucoma | [GSE45570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45570) | series matrix |
