@@ -53,10 +53,10 @@ flowchart LR
 
 ## Key findings
 
-- **142** shared genomic entities (**96** protein-coding genes) and **52** shared
+- **142** shared genomic entities (**97** protein-coding genes) and **52** shared
   transcriptomic DEGs, both well above chance (permutation *P* < 0.001);
   **SEMA3C** is common to both layers.
-- The **147** shared protein-coding genes form a significantly enriched PPI network
+- The **148** shared protein-coding genes form a significantly enriched PPI network
   (65 connected proteins, 92 edges; PPI enrichment *P* = 5.95 × 10⁻¹⁹) with eight
   major Louvain modules (Q = 0.656).
 - Hub genes: **APP, ITGB3, COL1A2, MMP2, FBLN1**.

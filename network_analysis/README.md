@@ -6,15 +6,19 @@ re-running the tools.
 
 | File | Tool | Content |
 |---|---|---|
-| `shared_genes_147.csv` | — | The 147 shared protein-coding genes (96 genomic, 52 transcriptomic; SEMA3C in both) with disease membership, source and direction of change. Input to STRING and g:Profiler. |
+| `shared_genes_148.csv` | — | The 148 shared protein-coding genes (97 genomic, 52 transcriptomic; SEMA3C in both) with disease membership, source and direction of change. Input to STRING and g:Profiler. |
 | `string_interactions.tsv` | STRING v12.5 | Interactions among the shared genes (full network, *Homo sapiens*, combined score ≥ 0.400, text mining excluded, no added interactors): 65 connected proteins, 92 edges. |
 | `gephi_node_metrics_modules.csv` | Gephi 0.11.3 | Per-gene degree, weighted degree, betweenness, closeness, eigenvector centrality, clustering coefficient, Louvain module (resolution 1.0, weighted) and hub status for the 65 connected genes. |
 | `omicsnet_tf_gene.csv` | OmicsNet 2.0 (TRRUST) | Transcription factor–target interactions of the 65 network genes. |
 | `omicsnet_mirna_gene.csv` | OmicsNet 2.0 (miRTarBase v9.0) | miRNA–target interactions; `Id1` is the miRNA name and `Name1` its miRTarBase accession. |
 | `omicsnet_metabolite_protein.csv` | OmicsNet 2.0 (KEGG) | Metabolite–protein interactions as exported, before filtering. |
 | `metabolite_filtering.csv` | — | Every metabolite–protein interaction with its network module, filtering result and metabolite class. |
-| `gprofiler_shared_genes.csv` | g:Profiler e114_eg62_p19_9dc92ac8 | Over-representation analysis of the 147 shared genes. |
+| `gprofiler_shared_genes.csv` | g:Profiler e114_eg62_p19_9dc92ac8 | Over-representation analysis of the 148 shared genes. |
 | `gprofiler_modules.csv` | g:Profiler e114_eg62_p19_9dc92ac8 | Over-representation analysis of each network module with ≥ 4 genes (M1–M8); only modules with significant terms are listed. |
+
+FKBP1C (genomic layer; AD and glaucoma) has no STRING interaction at the chosen
+settings and no annotation in the g:Profiler sources, so it does not change the
+network or the enrichment results.
 
 ## Settings
 
