@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Multi-Omics Network-Based Analysis of Common Routes in Pathogenesis of Retinal and Neurodegenerative Diseases: analysis code"
+type: software
+authors:
+  - family-names: Rajabi
+    given-names: Amir Hossein
+    orcid: "https://orcid.org/0009-0004-1321-4187"
+license: MIT
+date-released: "2026-11-19"
+keywords:
+  - multi-omics
+  - neurodegeneration
+  - Alzheimer's disease
+  - Parkinson's disease
+  - age-related macular degeneration
+  - diabetic retinopathy
+  - glaucoma
+  - transcriptomics
+  - GWAS
+  - protein-protein interaction network
